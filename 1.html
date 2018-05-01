@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>1</title>
+    <style>
+        * {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    块级元素、内联元素的区别
+</div>
+
+<script>
+    document.write("Hello World!")
+</script>
+
+<p id="demo">JavaScript 可以触发事件，就像按钮点击。</p>
+<button type="button" onclick="myFunction()">点击这里，改变文本</button>
+<script>
+    function myFunction(){
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    }
+</script>
+
+
+<p id="demo2">
+    JavaScript 能改变 HTML 元素的样式。
+</p>
+<button type="button" onclick="myFunction2()">点击这里，改变文本颜色</button>
+<script>
+    function myFunction2(){
+        var x = document.getElementById("demo2"); // 找到元素
+        x.style.color = "#ff0000";          // 改变样式
+    }
+</script>
+
+
+</body>
+</html>
